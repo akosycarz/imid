@@ -1,0 +1,7 @@
+Update drop version for /home/ania/Desktop/imid_folder/imid to version 1.4.0
+FileExistsError in file /home/ania/Desktop/imid_folder/imid/Snakefile, line 12:
+Data/gencode_annotation_trunc.gtf
+  File "/home/ania/Desktop/imid_folder/imid/Snakefile", line 12, in <module>
+  File "/home/ania/miniconda3/envs/drop_env/lib/python3.11/site-packages/drop/config/DropConfig.py", line 31, in __init__
+  File "/home/ania/miniconda3/envs/drop_env/lib/python3.11/site-packages/drop/config/DropConfig.py", line 129, in setDefaults
+  File "/home/ania/miniconda3/envs/drop_env/lib/python3.11/site-packages/drop/utils.py", line 44, in checkKeys
