@@ -1,49 +1,166 @@
+# DROP Pipeline Configuration File
+# ================================
+# This file configures the Detection of RNA Outliers Pipeline (DROP)
+# 
+# Key Sections:
+# - Project metadata and file paths
+# - Aberrant Expression analysis settings
+# - Aberrant Splicing analysis settings  
+# - Monoallelic Expression analysis settings
+# - RNA Variant Calling analysis settings
+# - Tool configurations and paths
+
+# =============================================================================
+# PROJECT METADATA
+# =============================================================================
 projectTitle: "DROP: Detection of RNA Outliers Pipeline"
 sampleAnnotation: sample_annotation.tsv
 genomeAssembly: hg19
 
+# =============================================================================
+# ABERRANT EXPRESSION ANALYSIS
+# =============================================================================
 aberrantExpression:
+    # Enable/disable aberrant expression analysis
     run: true
+    
+    # Analysis groups (must match DROP_GROUP in sample annotation)
     groups:
-        - group1
-    fpkmCutoff: 1
-    implementation: autoencoder
-    padjCutoff: 0.05
-    zScoreCutoff: 0
-    genesToTest: null
-    maxTestedDimensionProportion: 3
-    yieldSize: 2000000
+        - outrider
+        - fraser
+        - mae
+        - batch_0
+    
+    # Expression filtering parameters
+    fpkmCutoff: 1                    # Minimum FPKM for gene inclusion
+    padjCutoff: 0.05                 # Adjusted p-value cutoff for significance
+    zScoreCutoff: 0                  # Z-score cutoff for outlier detection
+    
+    # Analysis implementation
+    implementation: autoencoder       # Options: autoencoder, pca, peer
+    
+    # Gene selection
+    genesToTest: null                # Specific genes to test (null = all genes)
+    maxTestedDimensionProportion: 3  # Maximum proportion of samples for dimension reduction
+    
+    # Performance settings
+    yieldSize: 2000000               # Number of reads to process at once
 
+# =============================================================================
+# ABERRANT SPLICING ANALYSIS
+# =============================================================================
 aberrantSplicing:
+    # Enable/disable aberrant splicing analysis
     run: true
+    
+    # Analysis groups (must match DROP_GROUP in sample annotation)
     groups:
-        - group1
-    recount: false
-    longRead: false
-    keepNonStandardChrs: false
-    filter: true
-    minExpressionInOneSample: 20
-    quantileMinExpression: 10
-    minDeltaPsi: 0.05
-    implementation: PCA
-    padjCutoff: 0.1
-    maxTestedDimensionProportion: 6
-    genesToTest: null
-    FRASER_version: "FRASER"
-    deltaPsiCutoff: 0.3
-    quantileForFiltering: 0.95
+        - outrider
+        - fraser
+        - mae
+        - batch_0
+    
+    # Data processing options
+    recount: false                   # Use recount data
+    longRead: false                  # Long read sequencing data
+    keepNonStandardChrs: false       # Keep non-standard chromosomes
+    
+    # Expression filtering
+    filter: true                     # Apply expression filtering
+    minExpressionInOneSample: 20     # Minimum expression in at least one sample
+    quantileMinExpression: 10        # Quantile for minimum expression
+    
+    # Splicing analysis parameters
+    minDeltaPsi: 0.05               # Minimum delta PSI for significance
+    deltaPsiCutoff: 0.3             # Delta PSI cutoff for outlier detection
+    quantileForFiltering: 0.95      # Quantile for filtering
+    
+    # Analysis implementation
+    implementation: PCA              # Options: PCA, autoencoder
+    FRASER_version: "FRASER"        # FRASER version to use
+    
+    # Statistical parameters
+    padjCutoff: 0.1                 # Adjusted p-value cutoff
+    maxTestedDimensionProportion: 6  # Maximum proportion for dimension reduction
+    genesToTest: null                # Specific genes to test
 
+# =============================================================================
+# MONOALLELIC EXPRESSION ANALYSIS
+# =============================================================================
 mae:
+    # Enable/disable monoallelic expression analysis
     run: false
+    
+    # Analysis groups (must match DROP_GROUP in sample annotation)
     groups:
-        - group1
+        - outrider
+        - fraser
+        - mae
+        - batch_0
+    
+    # Additional MAE-specific parameters can be added here
+    # gatkIgnoreHeaderCheck: false
+    # minCoverage: 10
+    # minAllelicCount: 3
 
+# =============================================================================
+# RNA VARIANT CALLING ANALYSIS
+# =============================================================================
 rnaVariantCalling:
+    # Enable/disable RNA variant calling analysis
     run: false
+    
+    # Analysis groups (must match DROP_GROUP in sample annotation)
     groups:
-        - group1
+        - outrider
+        - fraser
+        - mae
+        - batch_0
+    
+    # Additional RVC-specific parameters can be added here
+    # minMappingQuality: 20
+    # minBaseQuality: 10
+    # ploidy: 2
 
+# =============================================================================
+# TOOL CONFIGURATIONS
+# =============================================================================
 tools:
-    gatkCmd: gatk
-    bcftoolsCmd: bcftools
-    samtoolsCmd: samtools
+    # Command line tools (ensure these are in your PATH)
+    gatkCmd: gatk                    # Genome Analysis Toolkit
+    bcftoolsCmd: bcftools            # BCFtools for VCF processing
+    samtoolsCmd: samtools            # SAMtools for BAM processing
+    
+    # Additional tool configurations
+    # javaCmd: java
+    # pythonCmd: python3
+    # rCmd: R
+
+# =============================================================================
+# ADVANCED CONFIGURATIONS (Optional)
+# =============================================================================
+# These sections can be uncommented and configured as needed
+
+# # Genome-specific settings
+# genome:
+#     fasta: /path/to/reference.fa
+#     gtf: /path/to/annotation.gtf
+#     chromosomeSizes: /path/to/chrom.sizes
+
+# # Quality control settings
+# qc:
+#     minMappingQuality: 20
+#     minBaseQuality: 10
+#     maxFragmentLength: 1000
+
+# # Output directories
+# output:
+#     htmlOutputPath: "html"
+#     processedDataDir: "processedData"
+#     tmpDir: "tmp"
+
+# # Resource limits
+# resources:
+#     maxMemory: "32G"
+#     maxCores: 8
+#     maxTime: "24:00:00"

@@ -1,34 +1,34 @@
-RNA_ID	RNA_BAM_FILE	DROP_GROUP	PAIRED_END	STRAND	COUNT_MODE	DNA_VCF_FILE	DNA_ID	KNIME_META	HPO_TERMS	KNOWN_RNA_ID	RNA_VCF_FILE	GENOME
-S8653Nr3	E:/bams/S8653Nr3.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S8696Nr1	E:/bams/S8696Nr1.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S8696Nr3	E:/bams/S8696Nr3.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S8819Nr2	E:/bams/S8819Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S8944Nr1	E:/bams/S8944Nr1.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S9168Nr2	E:/bams/S9168Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S1504Nr1	E:/bams/S1504Nr1.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S1504Nr2	E:/bams/S1504Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S1504Nr3	E:/bams/S1504Nr3.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S2941Nr2	E:/bams/S2941Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S4642Nr2	E:/bams/S4642Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S6525Nr1	E:/bams/S6525Nr1.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S6624Nr1	E:/bams/S6624Nr1.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S6624Nr2	E:/bams/S6624Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S6682Nr1	E:/bams/S6682Nr1.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S6682Nr4	E:/bams/S6682Nr4.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S6682Nr5	E:/bams/S6682Nr5.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S6729Nr2	E:/bams/S6729Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S6729Nr4	E:/bams/S6729Nr4.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S6773Nr1	E:/bams/S6773Nr1.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S7033Nr2	E:/bams/S7033Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S7033Nr3	E:/bams/S7033Nr3.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S7061Nr1	E:/bams/S7061Nr1.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S7061Nr2	E:/bams/S7061Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S7970Nr1	E:/bams/S7970Nr1.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S7970Nr2	E:/bams/S7970Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S8069Nr2	E:/bams/S8069Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S8069Nr3	E:/bams/S8069Nr3.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S8069Nr4	E:/bams/S8069Nr4.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S8069Nr5	E:/bams/S8069Nr5.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S8103Nr7	E:/bams/S8103Nr7.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S8525Nr1	E:/bams/S8525Nr1.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
-S8653Nr2	E:/bams/S8653Nr2.markdup.sorted.bam	group1	TRUE	NA	IntersectionStrict	NA	NA	NA	NA	NA	NA	hg19
+RNA_ID	RNA_BAM_FILE	DROP_GROUP	PAIRED_END	STRAND	COUNT_MODE	COUNT_OVERLAPS	DNA_VCF_FILE	DNA_ID	HPO_TERMS	GENOME	GENE_COUNTS_FILE	GENE_ANNOTATION	SPLICE_COUNTS_DIR
+S1504Nr1.markdup.sorted	E:/bams/S1504Nr1.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S1504Nr1.markdup.sorted	NA	hg19	NA	NA	NA
+S1504Nr2.markdup.sorted	E:/bams/S1504Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S1504Nr2.markdup.sorted	NA	hg19	NA	NA	NA
+S1504Nr3.markdup.sorted	E:/bams/S1504Nr3.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S1504Nr3.markdup.sorted	NA	hg19	NA	NA	NA
+S2941Nr2.markdup.sorted	E:/bams/S2941Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S2941Nr2.markdup.sorted	NA	hg19	NA	NA	NA
+S4642Nr2.markdup.sorted	E:/bams/S4642Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S4642Nr2.markdup.sorted	NA	hg19	NA	NA	NA
+S6525Nr1.markdup.sorted	E:/bams/S6525Nr1.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S6525Nr1.markdup.sorted	NA	hg19	NA	NA	NA
+S6624Nr1.markdup.sorted	E:/bams/S6624Nr1.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S6624Nr1.markdup.sorted	NA	hg19	NA	NA	NA
+S6624Nr2.markdup.sorted	E:/bams/S6624Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S6624Nr2.markdup.sorted	NA	hg19	NA	NA	NA
+S6682Nr1.markdup.sorted	E:/bams/S6682Nr1.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S6682Nr1.markdup.sorted	NA	hg19	NA	NA	NA
+S6682Nr4.markdup.sorted	E:/bams/S6682Nr4.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S6682Nr4.markdup.sorted	NA	hg19	NA	NA	NA
+S6682Nr5.markdup.sorted	E:/bams/S6682Nr5.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S6682Nr5.markdup.sorted	NA	hg19	NA	NA	NA
+S6729Nr2.markdup.sorted	E:/bams/S6729Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S6729Nr2.markdup.sorted	NA	hg19	NA	NA	NA
+S6729Nr4.markdup.sorted	E:/bams/S6729Nr4.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S6729Nr4.markdup.sorted	NA	hg19	NA	NA	NA
+S6773Nr1.markdup.sorted	E:/bams/S6773Nr1.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S6773Nr1.markdup.sorted	NA	hg19	NA	NA	NA
+S7033Nr2.markdup.sorted	E:/bams/S7033Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S7033Nr2.markdup.sorted	NA	hg19	NA	NA	NA
+S7033Nr3.markdup.sorted	E:/bams/S7033Nr3.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S7033Nr3.markdup.sorted	NA	hg19	NA	NA	NA
+S7061Nr1.markdup.sorted	E:/bams/S7061Nr1.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S7061Nr1.markdup.sorted	NA	hg19	NA	NA	NA
+S7061Nr2.markdup.sorted	E:/bams/S7061Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S7061Nr2.markdup.sorted	NA	hg19	NA	NA	NA
+S7970Nr1.markdup.sorted	E:/bams/S7970Nr1.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S7970Nr1.markdup.sorted	NA	hg19	NA	NA	NA
+S7970Nr2.markdup.sorted	E:/bams/S7970Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S7970Nr2.markdup.sorted	NA	hg19	NA	NA	NA
+S8069Nr2.markdup.sorted	E:/bams/S8069Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8069Nr2.markdup.sorted	NA	hg19	NA	NA	NA
+S8069Nr3.markdup.sorted	E:/bams/S8069Nr3.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8069Nr3.markdup.sorted	NA	hg19	NA	NA	NA
+S8069Nr4.markdup.sorted	E:/bams/S8069Nr4.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8069Nr4.markdup.sorted	NA	hg19	NA	NA	NA
+S8069Nr5.markdup.sorted	E:/bams/S8069Nr5.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8069Nr5.markdup.sorted	NA	hg19	NA	NA	NA
+S8103Nr7.markdup.sorted	E:/bams/S8103Nr7.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8103Nr7.markdup.sorted	NA	hg19	NA	NA	NA
+S8525Nr1.markdup.sorted	E:/bams/S8525Nr1.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8525Nr1.markdup.sorted	NA	hg19	NA	NA	NA
+S8653Nr2.markdup.sorted	E:/bams/S8653Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8653Nr2.markdup.sorted	NA	hg19	NA	NA	NA
+S8653Nr3.markdup.sorted	E:/bams/S8653Nr3.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8653Nr3.markdup.sorted	NA	hg19	NA	NA	NA
+S8696Nr1.markdup.sorted	E:/bams/S8696Nr1.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8696Nr1.markdup.sorted	NA	hg19	NA	NA	NA
+S8696Nr3.markdup.sorted	E:/bams/S8696Nr3.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8696Nr3.markdup.sorted	NA	hg19	NA	NA	NA
+S8819Nr2.markdup.sorted	E:/bams/S8819Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8819Nr2.markdup.sorted	NA	hg19	NA	NA	NA
+S8944Nr1.markdup.sorted	E:/bams/S8944Nr1.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S8944Nr1.markdup.sorted	NA	hg19	NA	NA	NA
+S9168Nr2.markdup.sorted	E:/bams/S9168Nr2.markdup.sorted.bam	outrider,fraser,mae,batch_0	TRUE	no	IntersectionStrict	FALSE	NA	S9168Nr2.markdup.sorted	NA	hg19	NA	NA	NA

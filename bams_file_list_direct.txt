@@ -80,4 +80,4 @@ BAI	\mnt\e\bams\S9168Nr2.markdup.sorted.bam.bai	S9168Nr2.markdup.sorted.bam.bai
 ----------------------------------------
 Total BAM files: 33
 Total BAI files: 33
-Generated on: Sun Jul 13 23:33:02 CEST 2025
+Generated on: Mon Jul 14 10:59:06 CEST 2025
